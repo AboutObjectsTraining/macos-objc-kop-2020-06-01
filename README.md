@@ -4,7 +4,7 @@
 
 #macos-objc-kop-2020-05-29
 
-## Objective-C and Network Programming on macOS
+## Objective-C Programming / macOS Networking
 May 29, 2020
 
 
