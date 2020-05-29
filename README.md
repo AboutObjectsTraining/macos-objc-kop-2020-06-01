@@ -2,10 +2,10 @@
 <a href="https://www.aboutobjects.com"><img src="ao-logo.png" height=18 style="height: 18px;"/></a>
 </div>
 
-#macos-objc-kop-2020-05-29
+#macos-objc-kop-2020-06-01
 
 ## Objective-C Programming / macOS Networking
-May 29, 2020
+June 01, 2020
 
 
 ### Additional Objective-C Programming Examples
