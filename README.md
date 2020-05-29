@@ -2,24 +2,23 @@
 <a href="https://www.aboutobjects.com"><img src="ao-logo.png" height=18 style="height: 18px;"/></a>
 </div>
 
-#macos-swift-kop-2020-04-27
+#macos-objc-kop-2020-05-29
 
-## macOS Development in Swift
+## Objective-C and Network Programming on macOS
+May 29, 2020
 
-April 17, 2020
 
+### Additional Objective-C Programming Examples
 
-### Additional Swift Programming Examples
+Example Xcode projects on GitHub: 
 
-Additional source code examples on GitHub: 
+* Solution code for the Coolness app and additional example projects
 
-https://github.com/AboutObjectsTraining/Swift4Examples
+  https://github.com/AboutObjectsTraining/ios-objc-code
 
-https://github.com/AboutObjectsTraining/Swift-4-Highlights
+* Solution code for the ReadingList app
 
-### Swift ReadingList Model
-
-https://github.com/AboutObjectsTraining/readinglist-model-swift
+  https://github.com/AboutObjectsTraining/objc-readinglist
 
 ## Author
 
