@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B41C7B842453573C00ACE34B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41C7B832453573C00ACE34B /* AppDelegate.swift */; };
+		B41D6FF224535AF5003F710F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41D6FF124535AF5003F710F /* Assets.xcassets */; };
+		B41D704824536095003F710F /* TextServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41D704724536095003F710F /* TextServiceInterface.framework */; };
+		B41D704924536095003F710F /* TextServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B41D704724536095003F710F /* TextServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B41D704C2453609F003F710F /* TextService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B41D704B2453609F003F710F /* TextService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B41D705524536AED003F710F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D705324536AED003F710F /* Main.storyboard */; };
+		B446250424535A59009DFA9D /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446250324535A59009DFA9D /* TextViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B41D704A24536095003F710F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B41D704924536095003F710F /* TextServiceInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41D704D2453609F003F710F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				B41D704C2453609F003F710F /* TextService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B41C7B802453573C00ACE34B /* Text Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41C7B832453573C00ACE34B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B41C7B8C2453573D00ACE34B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41C7B8D2453573D00ACE34B /* TextEditorXPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextEditorXPC.entitlements; sourceTree = "<group>"; };
+		B41D6FF124535AF5003F710F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B41D704724536095003F710F /* TextServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TextServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41D704B2453609F003F710F /* TextService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; path = TextService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41D705424536AED003F710F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B446250324535A59009DFA9D /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B41C7B7D2453573C00ACE34B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41D704824536095003F710F /* TextServiceInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B41C7B772453573C00ACE34B = {
+			isa = PBXGroup;
+			children = (
+				B41C7B822453573C00ACE34B /* TextEditorApp */,
+				B41C7B812453573C00ACE34B /* Products */,
+				B41D704624536095003F710F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B41C7B812453573C00ACE34B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B41C7B802453573C00ACE34B /* Text Editor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B41C7B822453573C00ACE34B /* TextEditorApp */ = {
+			isa = PBXGroup;
+			children = (
+				B41C7B832453573C00ACE34B /* AppDelegate.swift */,
+				B446250324535A59009DFA9D /* TextViewController.swift */,
+				B41D705324536AED003F710F /* Main.storyboard */,
+				B41D6FF124535AF5003F710F /* Assets.xcassets */,
+				B41C7B8C2453573D00ACE34B /* Info.plist */,
+				B41C7B8D2453573D00ACE34B /* TextEditorXPC.entitlements */,
+			);
+			path = TextEditorApp;
+			sourceTree = "<group>";
+		};
+		B41D704624536095003F710F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B41D704B2453609F003F710F /* TextService.xpc */,
+				B41D704724536095003F710F /* TextServiceInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B41C7B7F2453573C00ACE34B /* TextEditorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41C7B902453573D00ACE34B /* Build configuration list for PBXNativeTarget "TextEditorApp" */;
+			buildPhases = (
+				B41C7B7C2453573C00ACE34B /* Sources */,
+				B41C7B7D2453573C00ACE34B /* Frameworks */,
+				B41C7B7E2453573C00ACE34B /* Resources */,
+				B41D704A24536095003F710F /* Embed Frameworks */,
+				B41D704D2453609F003F710F /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextEditorApp;
+			productName = TextEditorXPC;
+			productReference = B41C7B802453573C00ACE34B /* Text Editor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B41C7B782453573C00ACE34B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "About Objects";
+				TargetAttributes = {
+					B41C7B7F2453573C00ACE34B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B41C7B7B2453573C00ACE34B /* Build configuration list for PBXProject "TextEditorApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B41C7B772453573C00ACE34B;
+			productRefGroup = B41C7B812453573C00ACE34B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B41C7B7F2453573C00ACE34B /* TextEditorApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B41C7B7E2453573C00ACE34B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41D6FF224535AF5003F710F /* Assets.xcassets in Resources */,
+				B41D705524536AED003F710F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B41C7B7C2453573C00ACE34B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41C7B842453573C00ACE34B /* AppDelegate.swift in Sources */,
+				B446250424535A59009DFA9D /* TextViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B41D705324536AED003F710F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41D705424536AED003F710F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B41C7B8E2453573D00ACE34B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B41C7B8F2453573D00ACE34B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B41C7B912453573D00ACE34B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TextEditorApp/TextEditorXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TextEditorApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextEditorXPC;
+				PRODUCT_NAME = "Text Editor";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B41C7B922453573D00ACE34B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TextEditorApp/TextEditorXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TextEditorApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextEditorXPC;
+				PRODUCT_NAME = "Text Editor";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B41C7B7B2453573C00ACE34B /* Build configuration list for PBXProject "TextEditorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41C7B8E2453573D00ACE34B /* Debug */,
+				B41C7B8F2453573D00ACE34B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B41C7B902453573D00ACE34B /* Build configuration list for PBXNativeTarget "TextEditorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41C7B912453573D00ACE34B /* Debug */,
+				B41C7B922453573D00ACE34B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B41C7B782453573C00ACE34B /* Project object */;
+}
