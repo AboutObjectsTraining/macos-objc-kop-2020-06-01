@@ -16,4 +16,10 @@
     printf("\nWoof! Woof!\n\n");
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    Dog *newDog = [[Dog allocWithZone:zone] init];
+    newDog->_name = [[self name] copy];
+    return newDog;
+}
+
 @end

@@ -2,14 +2,9 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
-@interface Dog : NSObject <NSCopying> {
-    NSString *_name;
-}
-
-- (NSString *)name;
-- (void)setName:(NSString *)newValue;
-
-- (void)bark;
+@interface Employee : Person
 
 @end
+

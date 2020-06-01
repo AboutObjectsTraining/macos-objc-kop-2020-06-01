@@ -6,6 +6,30 @@
 
 @implementation Person
 
+- (instancetype)initWithFirstName:(NSString *)aFirstName
+                         lastName:(NSString *)aLastName {
+    return [self initWithFirstName:aFirstName lastName:aLastName age:0];
+}
+
++ (instancetype)personWithFirstName:(NSString *)aFirstName
+                           lastName:(NSString *)aLastName
+                                age:(NSInteger)anAge {
+    return [[self alloc] initWithFirstName:aFirstName lastName:aLastName age:anAge];
+}
+
+- (instancetype)initWithFirstName:(NSString *)aFirstName
+                         lastName:(NSString *)aLastName
+                              age:(NSInteger)anAge {
+    self = [super init];
+    if (self == nil) return nil;
+    
+    _firstName = [aFirstName copy];
+    _lastName = [aLastName copy];
+    _age = anAge;
+    
+    return self;
+}
+
 - (NSString *)firstName {
     return _firstName;
 }
@@ -43,12 +67,12 @@
     return _dog;
 }
 - (void)setDog:(Dog *)newValue {
-    _dog = newValue;
+    _dog = [newValue copy];
 }
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@, age: %@", [self fullName], @([self age])];
+    return [NSString stringWithFormat:@"%@, %@, age: %@", [super description], [self fullName], @([self age])];
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector {

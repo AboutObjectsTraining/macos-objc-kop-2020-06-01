@@ -12,6 +12,17 @@
     Dog *_dog;
 }
 
+- (instancetype)initWithFirstName:(NSString *)aFirstName
+                         lastName:(NSString *)aLastName;
+
++ (instancetype)personWithFirstName:(NSString *)aFirstName
+                           lastName:(NSString *)aLastName
+                                age:(NSInteger)anAge;
+
+- (instancetype)initWithFirstName:(NSString *)aFirstName
+                         lastName:(NSString *)aLastName
+                              age:(NSInteger)anAge;
+
 - (NSString *)firstName;
 - (void)setFirstName:(NSString *)newValue;
 

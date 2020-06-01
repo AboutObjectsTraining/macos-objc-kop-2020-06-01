@@ -32,6 +32,14 @@
     NSLog(@"%@", foo);
 }
 
+- (void)testCopyingBehavior {
+    Dog *dog = [[Dog alloc] init];
+    [dog setName:@"Rover"];
+    
+    Dog *copyOfDog = [dog copy];
+    NSLog(@"Copy of dog's name is %@", [copyOfDog name]);
+}
+
 - (void)testMessageForwarding {
     id person = [[Person alloc] init];
     [person setFirstName:@"Fred"];
@@ -44,6 +52,18 @@
     if ([person respondsToSelector:@selector(bark)]) {
         [person bark];
     }
+}
+
+- (void)testDesignatedInitializer {
+    Person *person = [[Person alloc] initWithFirstName:@"Fred"
+                                              lastName:@"Smith"
+                                                   age:42];
+    NSLog(@"%@", person);
+}
+
+- (void)testInheritedInitializers {
+    Employee *emp = [Employee personWithFirstName:@"Fred" lastName:@"Smith" age:33];
+    NSLog(@"%@", emp);
 }
 
 @end
