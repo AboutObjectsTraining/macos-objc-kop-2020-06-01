@@ -20,16 +20,19 @@
 - (void)testPart01
 {
     Person *fred = [[Person alloc] init];
-    [fred setFirstName:@"Fred"];
-    [fred setLastName:@"Smith"];
-    [fred setAge:32];
+    fred.firstName = @"Fred";
+    fred.lastName = @"Smith";
+    fred.age = 32;
+//    [fred setFirstName:@"Fred"];
+//    [fred setLastName:@"Smith"];
+//    [fred setAge:32];
     
     NSLog(@"\nfirst name: %@"
           @"\nlast name: %@"
           @"\nage: %d",
-          [fred firstName],
-          [fred lastName],
-          [fred age]);
+          fred.firstName,
+          fred.lastName,
+          fred.age);
 }
 
 - (void)testPart02
@@ -37,10 +40,8 @@
     Person *fred = [[Person alloc] initWithFirstName:@"Fred"
                                             lastName:@"Smith"
                                                  age:32];
-    NSLog(@"%@", [fred fullName]);
-    
-    NSLog(@"%@", [fred description]);
-    
+    NSLog(@"%@", fred.fullName);
+    NSLog(@"%@", fred.description);
     NSLog(@"%@", fred);
 }
 
@@ -66,9 +67,11 @@
 
 - (void)testPart04
 {
-    NSArray *people = [self people];
+    NSArray <Person *> *people = [self people];
     
-    [people[0] setRating:3];
+    people[0].rating = 3;
+//    [people[0] setRating:3];
+    
     [people[1] setRating:999];
     [people[2] setRating:0];
     [people[3] setRating:3];
