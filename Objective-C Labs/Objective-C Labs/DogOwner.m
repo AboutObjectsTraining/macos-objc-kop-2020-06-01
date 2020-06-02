@@ -5,29 +5,23 @@
 
 // PART 1
 
-- (NSArray *)dogs
-{
+- (NSArray *)dogs {
     return [self mutableDogs];
 }
 
-- (NSMutableArray *)mutableDogs
-{
+- (NSMutableArray *)mutableDogs {
     if (_dogs == nil) {
         _dogs = [NSMutableArray array];
     }
-    
     return _dogs;
 }
 
-- (void)addDogs:(NSArray *)newDogs
-{
+- (void)addDogs:(NSArray *)newDogs{
     [[self mutableDogs] addObjectsFromArray:newDogs];
 }
 
-- (NSString *)description
-{
-    return [NSString stringWithFormat:@"\nOwner: %@\nDogs: %@",
-            [self fullName], [self dogs]];
+- (NSString *)description {
+    return [NSString stringWithFormat:@"\nOwner: %@\nDogs: %@", [self fullName], [self dogs]];
 }
 
 ////////
@@ -35,8 +29,7 @@
 
 // PART 2
 
-- (void)dogDidHearDoorbell:(Dog *)dog
-{
+- (void)dogDidHearDoorbell:(Dog *)dog {
     if ([[dog name] isEqualToString:@"Bowser"] ||
         [[dog name] isEqualToString:@"Woofsie"])
     {
@@ -44,13 +37,11 @@
     }
 }
 
-- (BOOL)dogShouldBark:(Dog *)dog
-{
+- (BOOL)dogShouldBark:(Dog *)dog {
     return NO;
 }
 
-- (BOOL)dogShouldWagTail:(Dog *)dog
-{
+- (BOOL)dogShouldWagTail:(Dog *)dog {
     return NO;
 }
 

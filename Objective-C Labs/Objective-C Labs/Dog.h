@@ -16,7 +16,6 @@
 @interface Dog : NSObject
 {
     NSString *_name;
-    
     id<DogDelegate> _delegate; // PART 2
 }
 

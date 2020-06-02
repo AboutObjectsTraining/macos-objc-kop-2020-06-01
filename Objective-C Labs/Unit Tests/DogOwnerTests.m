@@ -5,7 +5,6 @@
 #import "NSArray+LABAdditions.h"
 
 @interface DogOwnerTests : AOITestCase
-
 @end
 
 
@@ -18,9 +17,7 @@
 {
     [super setUp];
     
-    _owner = [[DogOwner alloc] initWithFirstName:@"Fred"
-                                        lastName:@"Smith"
-                                             age:32];
+    _owner = [[DogOwner alloc] initWithFirstName:@"Fred" lastName:@"Smith" age:32];
     
     Dog *bowser = [[Dog alloc] initWithName:@"Bowser"];
     Dog *woofsie = [[Dog alloc] initWithName:@"Woofsie"];

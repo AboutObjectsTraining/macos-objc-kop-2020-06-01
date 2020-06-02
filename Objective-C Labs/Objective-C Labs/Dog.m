@@ -4,8 +4,7 @@
 
 // PART 1
 
-- (id)initWithName:(NSString *)name
-{
+- (id)initWithName:(NSString *)name {
     if (!(self = [super init])) return nil;
     
     _name = [name copy];
@@ -13,28 +12,23 @@
     return self;
 }
 
-- (NSString *)name
-{
+- (NSString *)name {
     return _name;
 }
 
-- (void)growl
-{
+- (void)growl {
     printf("%s: Grrrrrr!\n", [[self name] UTF8String]);
 }
 
-- (void)bark
-{
+- (void)bark {
     printf("%s: Woof! Woof! Woof!\n", [[self name] UTF8String]);
 }
 
-- (void)wagTail
-{
+- (void)wagTail {
     printf("%s: [Wags tail.]\n", [[self name] UTF8String]);
 }
 
-- (NSString *)description
-{
+- (NSString *)description {
     return [self name];
 }
 
@@ -51,18 +45,15 @@
 
 // PART 2
 
-- (id<DogDelegate>)delegate
-{
+- (id<DogDelegate>)delegate {
     return _delegate;
 }
 
-- (void)setDelegate:(id<DogDelegate>)delegate
-{
+- (void)setDelegate:(id<DogDelegate>)delegate {
     _delegate = delegate;
 }
 
-- (void)doorbellDidRing
-{
+- (void)doorbellDidRing {
     [self growl];
     
     [_delegate dogDidHearDoorbell:self];
@@ -76,8 +67,7 @@
     }
 }
 
-- (void)sit
-{
+- (void)sit {
     printf("%s: [Sits.]\n", [[self name] UTF8String]);
 }
 

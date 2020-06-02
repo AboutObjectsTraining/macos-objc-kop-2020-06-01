@@ -39,10 +39,8 @@
 }
 
 - (void)testCreatePlist {
-    NSDictionary *info = @{ @"name" : @"Fred W. Smith",
-                            @"age" : @37,
-                            @"phones" : @{@"Work" : @"703-123-4567",
-                                          @"Home" : @"301-987-6543"},
+    NSDictionary *info = @{ @"name" : @"Fred W. Smith", @"age" : @37,
+                            @"phones" : @{@"Work" : @"703-123-4567", @"Home" : @"301-987-6543"},
                             @"kids"   : @[@"Bob", @"Alice", @"Jill"] };
     NSLog(@"%@", info);
     
@@ -56,14 +54,6 @@
 }
 
 - (void)testKVC {
-    Person *fred = [[Person alloc] init];
-    [fred setValue:@"Fred" forKey:@"firstName"];
-    [fred setValue:@"Smith" forKey:@"lastName"];
-    [fred setValue:@5 forKey:@"rating"];
-    NSLog(@"%@", fred);
-}
-
-- (void)testKVCWithDictionary {
     NSDictionary *info = @{ @"firstName" : @"Fred",
                             @"lastName"  : @"Smith",
                             @"rating"    : @5 };

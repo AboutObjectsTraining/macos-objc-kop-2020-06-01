@@ -26,6 +26,7 @@
 		ABF8527A181358F2000B9E84 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF85279181358F2000B9E84 /* Dog.m */; };
 		ABF8527B181358FE000B9E84 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF85279181358F2000B9E84 /* Dog.m */; };
 		B4A9FFDF2486BB9300FCD15E /* DictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A9FFDE2486BB9300FCD15E /* DictionaryTests.m */; };
+		B4A9FFE22486F7B200FCD15E /* NSString+LABAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A9FFE12486F7B200FCD15E /* NSString+LABAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		ABF85278181358F2000B9E84 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		ABF85279181358F2000B9E84 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		B4A9FFDE2486BB9300FCD15E /* DictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictionaryTests.m; sourceTree = "<group>"; };
+		B4A9FFE02486F7B200FCD15E /* NSString+LABAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LABAdditions.h"; sourceTree = "<group>"; };
+		B4A9FFE12486F7B200FCD15E /* NSString+LABAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LABAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				ABE434C8182AB05400269901 /* DogOwner.m */,
 				ABF85278181358F2000B9E84 /* Dog.h */,
 				ABF85279181358F2000B9E84 /* Dog.m */,
+				B4A9FFE02486F7B200FCD15E /* NSString+LABAdditions.h */,
+				B4A9FFE12486F7B200FCD15E /* NSString+LABAdditions.m */,
 				ABE434CD182AC7C100269901 /* NSArray+LABAdditions.h */,
 				ABE434CE182AC7C100269901 /* NSArray+LABAdditions.m */,
 				ABD09A4B1811EBC800608546 /* Supporting Files */,
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A9FFE22486F7B200FCD15E /* NSString+LABAdditions.m in Sources */,
 				ABF8527A181358F2000B9E84 /* Dog.m in Sources */,
 				AB18FBC91814901C00AC1192 /* Employee.m in Sources */,
 				ABD09A6E1811ED2100608546 /* Person.m in Sources */,
