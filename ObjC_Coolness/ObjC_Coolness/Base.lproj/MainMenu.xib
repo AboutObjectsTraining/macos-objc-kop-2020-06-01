@@ -657,6 +657,16 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                            <menuItem title="Inspector Panel" keyEquivalent="2" id="0pn-hS-GA9">
+                                <connections>
+                                    <action selector="showInspectorPanel:" target="Voe-Tx-rLC" id="sTs-S4-XDJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Main Window" keyEquivalent="1" id="OO0-FN-hCk">
+                                <connections>
+                                    <action selector="showMainWindow:" target="Voe-Tx-rLC" id="eUR-YI-7RW"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
@@ -729,7 +739,7 @@
                     <constraint firstItem="hqA-tZ-Jda" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="c9r-Hy-YGU"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="144" y="425"/>
+            <point key="canvasLocation" x="156" y="540"/>
         </window>
     </objects>
 </document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B4A900022487EC6E00FCD15E /* CLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A900002487EC6E00FCD15E /* CLNAppDelegate.m */; };
 		B4A900052487F38300FCD15E /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A900042487F38300FCD15E /* CLNCoolViewCell.m */; };
+		B4A900092488412600FCD15E /* InspectorPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A900082488412600FCD15E /* InspectorPanel.xib */; };
 		B4A9FFF32487EABE00FCD15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A9FFF22487EABE00FCD15E /* Assets.xcassets */; };
 		B4A9FFF62487EABE00FCD15E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4A9FFF42487EABE00FCD15E /* MainMenu.xib */; };
 		B4A9FFF92487EABE00FCD15E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A9FFF82487EABE00FCD15E /* main.m */; };
@@ -19,6 +20,7 @@
 		B4A900012487EC6E00FCD15E /* CLNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNAppDelegate.h; sourceTree = "<group>"; };
 		B4A900032487F38300FCD15E /* CLNCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
 		B4A900042487F38300FCD15E /* CLNCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
+		B4A900082488412600FCD15E /* InspectorPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectorPanel.xib; sourceTree = "<group>"; };
 		B4A9FFEC2487EABD00FCD15E /* ObjC_Coolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjC_Coolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A9FFF22487EABE00FCD15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A9FFF52487EABE00FCD15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				B4A900042487F38300FCD15E /* CLNCoolViewCell.m */,
 				B4A9FFF22487EABE00FCD15E /* Assets.xcassets */,
 				B4A9FFF42487EABE00FCD15E /* MainMenu.xib */,
+				B4A900082488412600FCD15E /* InspectorPanel.xib */,
 				B4A9FFF72487EABE00FCD15E /* Info.plist */,
 				B4A9FFF82487EABE00FCD15E /* main.m */,
 				B4A9FFFA2487EABE00FCD15E /* ObjC_Coolness.entitlements */,
@@ -129,6 +132,7 @@
 			files = (
 				B4A9FFF32487EABE00FCD15E /* Assets.xcassets in Resources */,
 				B4A9FFF62487EABE00FCD15E /* MainMenu.xib in Resources */,
+				B4A900092488412600FCD15E /* InspectorPanel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

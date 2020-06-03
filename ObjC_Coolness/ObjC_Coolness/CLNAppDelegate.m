@@ -9,8 +9,15 @@
 
 @implementation CLNAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+- (IBAction)showInspectorPanel:(id)sender {
+    if (self.inspectorPanel == nil) {
+        [NSBundle.mainBundle loadNibNamed:@"InspectorPanel" owner:self topLevelObjects:nil];
+    }
+    [self.inspectorPanel orderFront:nil];
+}
+
+- (IBAction)showMainWindow:(id)sender {
+    [self.window orderFront:nil];
 }
 
 @end

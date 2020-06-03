@@ -5,6 +5,7 @@
 
 @interface CLNAppDelegate : NSObject <NSApplicationDelegate>
 
+@property (strong, nonatomic) IBOutlet NSPanel *inspectorPanel;
 
 @end
 
