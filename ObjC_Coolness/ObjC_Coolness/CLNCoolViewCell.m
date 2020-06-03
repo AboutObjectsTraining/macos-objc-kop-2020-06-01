@@ -3,8 +3,17 @@
 
 #import "CLNCoolViewCell.h"
 
+const NSPoint CLNTextOrigin = { 12, 8 };
+const NSEdgeInsets CLNTextInsets = {
+    .left = 12,
+    .right = 12,
+    .top = 8,
+    .bottom = 7
+};
+
 IB_DESIGNABLE
 @interface CLNCoolViewCell ()
+@property (class, readonly, nonatomic) NSDictionary *textAttributes;
 @property (strong, nonatomic) IBInspectable NSColor *backgroundColor;
 @property (getter=isHighlighted, nonatomic) BOOL highlighted;
 @property NSUInteger repeatCount;
@@ -34,6 +43,11 @@ IB_DESIGNABLE
     [self configureLayer];
 }
 
+- (void)setText:(NSString *)text {
+    _text = [text copy];
+    [self sizeToFit];
+}
+
 - (void)setBackgroundColor:(NSColor *)backgroundColor {
     _backgroundColor = backgroundColor;
     self.layer.backgroundColor = backgroundColor.CGColor;
@@ -44,9 +58,25 @@ IB_DESIGNABLE
     self.alphaValue = highlighted ? 0.5 : 1;
 }
 
+// MARK: - Drawing and resizing
+
++ (NSDictionary *)textAttributes {
+    // TODO: Cache in static variable
+    return @{ NSFontAttributeName : [NSFont systemFontOfSize:20],
+              NSForegroundColorAttributeName : NSColor.whiteColor, };
+}
+
+- (void)sizeToFit {
+    if (self.text == nil) return;
+    NSSize newSize = [self.text sizeWithAttributes:self.class.textAttributes];
+    newSize.width += CLNTextInsets.left + CLNTextInsets.right;
+    newSize.height += CLNTextInsets.top + CLNTextInsets.bottom;
+    [self setFrameSize:newSize];
+}
+
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    // TODO: Draw text
+    [self.text drawAtPoint:CLNTextOrigin withAttributes:self.class.textAttributes];
 }
 
 // MARK: - Animation

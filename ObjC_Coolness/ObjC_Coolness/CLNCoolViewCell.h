@@ -4,5 +4,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface CLNCoolViewCell : NSView
-
+@property (copy, nonatomic) IBInspectable NSString *text;
 @end

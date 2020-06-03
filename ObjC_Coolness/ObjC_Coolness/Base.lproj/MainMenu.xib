@@ -697,21 +697,23 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCt-nX-aXc" customClass="CLNCoolViewCell">
-                                    <rect key="frame" x="20" y="261" width="181" height="35"/>
+                                    <rect key="frame" x="20" y="261" width="215" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
                                             <color key="value" name="systemIndigoColor" catalog="System" colorSpace="catalog"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World! 🌏🌎🌍"/>
                                     </userDefinedRuntimeAttributes>
                                 </customView>
                                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKd-ej-CFk" customClass="CLNCoolViewCell">
-                                    <rect key="frame" x="62" y="201" width="181" height="35"/>
+                                    <rect key="frame" x="62" y="201" width="236" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
                                             <color key="value" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Cool Cells Rawk!!! 🥂🍺🎉"/>
                                     </userDefinedRuntimeAttributes>
                                 </customView>
                             </subviews>
