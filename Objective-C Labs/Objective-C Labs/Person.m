@@ -30,6 +30,12 @@ const NSUInteger MaxRating = 5;
     return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
+//@synthesize rating = _rating;
+//
+//- (NSUInteger)rating {
+//    return _rating;
+//}
+
 - (void)setRating:(NSUInteger)newValue {
     _rating = newValue > MaxRating ? MaxRating : newValue;
 }

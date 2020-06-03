@@ -12,6 +12,7 @@
 		B42C8F4A24853F3D002BB6B9 /* Peeps.h in Headers */ = {isa = PBXBuildFile; fileRef = B42C8F3C24853F3C002BB6B9 /* Peeps.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B42C8F5524853FF2002BB6B9 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = B42C8F5324853FF2002BB6B9 /* Person.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B42C8F5624853FF2002BB6B9 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B42C8F5424853FF2002BB6B9 /* Person.m */; };
+		B4A9000724881AA900FCD15E /* BlockLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A9000624881AA900FCD15E /* BlockLiteralTests.m */; };
 		B4A9FFD324857B5800FCD15E /* Dog.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A9FFD124857B5800FCD15E /* Dog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4A9FFD424857B5800FCD15E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A9FFD224857B5800FCD15E /* Dog.m */; };
 		B4A9FFD724859B6500FCD15E /* Employee.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A9FFD524859B6500FCD15E /* Employee.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 		B42C8F4924853F3D002BB6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B42C8F5324853FF2002BB6B9 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		B42C8F5424853FF2002BB6B9 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B4A9000624881AA900FCD15E /* BlockLiteralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockLiteralTests.m; sourceTree = "<group>"; };
 		B4A9FFD124857B5800FCD15E /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		B4A9FFD224857B5800FCD15E /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		B4A9FFD524859B6500FCD15E /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				B42C8F4724853F3D002BB6B9 /* PersonTests.m */,
 				B4A9FFD92485A5C700FCD15E /* CollectionTests.m */,
+				B4A9000624881AA900FCD15E /* BlockLiteralTests.m */,
 				B42C8F4924853F3D002BB6B9 /* Info.plist */,
 			);
 			path = PeepsTests;
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42C8F4824853F3D002BB6B9 /* PersonTests.m in Sources */,
+				B4A9000724881AA900FCD15E /* BlockLiteralTests.m in Sources */,
 				B4A9FFDA2485A5C700FCD15E /* CollectionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,8 @@
     NSMutableArray *_dogs;
 }
 
-- (NSArray *)dogs;
+@property (strong, nonatomic) NSArray *dogs;
+//- (NSArray *)dogs;
 
 - (void)addDogs:(NSArray *)newDogs;
 

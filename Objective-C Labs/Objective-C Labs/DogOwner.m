@@ -1,6 +1,10 @@
 #import "DogOwner.h"
 #import "Dog.h"
 
+@interface DogOwner ()
+@property (strong, nonatomic) NSMutableArray *mutableDogs;
+@end
+
 @implementation DogOwner
 
 // PART 1

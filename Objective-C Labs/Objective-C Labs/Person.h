@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface Person : NSObject
+@interface Person : NSObject 
 
 - (id)initWithFirstName:(NSString *)firstName
                lastName:(NSString *)lastName
@@ -14,6 +14,7 @@
 @property (copy, nonatomic) NSString *firstName;
 @property (copy, nonatomic) NSString *lastName;
 @property (readonly, nonatomic) NSString *fullName;
+
 @property (assign, nonatomic) int age;
 @property (nonatomic) NSUInteger rating;
 @property (readonly, nonatomic) NSString *ratingStars;
