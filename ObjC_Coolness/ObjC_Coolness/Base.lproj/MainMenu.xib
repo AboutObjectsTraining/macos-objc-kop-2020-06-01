@@ -15,6 +15,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="CLNAppDelegate">
             <connections>
+                <outlet property="coolController" destination="h37-NJ-G7p" id="Cq0-Sm-F9v"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -739,7 +740,13 @@
                     <constraint firstItem="hqA-tZ-Jda" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="c9r-Hy-YGU"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="156" y="540"/>
+            <point key="canvasLocation" x="206" y="529"/>
         </window>
+        <viewController id="h37-NJ-G7p" customClass="CLNCoolViewController">
+            <connections>
+                <outlet property="box" destination="hqA-tZ-Jda" id="emK-gv-vnY"/>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="WTa-Hs-izC"/>
+            </connections>
+        </viewController>
     </objects>
 </document>

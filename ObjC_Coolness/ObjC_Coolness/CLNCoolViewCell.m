@@ -14,7 +14,7 @@ const NSEdgeInsets CLNTextInsets = {
 IB_DESIGNABLE
 @interface CLNCoolViewCell ()
 @property (class, readonly, nonatomic) NSDictionary *textAttributes;
-@property (strong, nonatomic) IBInspectable NSColor *backgroundColor;
+//@property (strong, nonatomic) IBInspectable NSColor *backgroundColor;
 @property (getter=isHighlighted, nonatomic) BOOL highlighted;
 @property NSUInteger repeatCount;
 @end

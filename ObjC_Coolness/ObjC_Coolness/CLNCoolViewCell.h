@@ -5,4 +5,5 @@
 
 @interface CLNCoolViewCell : NSView
 @property (copy, nonatomic) IBInspectable NSString *text;
+@property (strong, nonatomic) IBInspectable NSColor *backgroundColor;
 @end
