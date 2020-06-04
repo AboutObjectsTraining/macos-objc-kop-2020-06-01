@@ -708,7 +708,60 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uph-Po-dBM">
+                                <rect key="frame" x="20" y="49" width="440" height="201"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="7hR-7W-M0Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="440" height="201"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" usesInspectorBar="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="0aI-Cx-TAc">
+                                            <rect key="frame" x="0.0" y="0.0" width="440" height="201"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="440" height="201"/>
+                                            <size key="maxSize" width="440" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Mv7-12-Ffv">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="iz1-0Y-YlV">
+                                    <rect key="frame" x="424" y="0.0" width="16" height="201"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vRg-FN-ohD">
+                                <rect key="frame" x="111" y="18" width="259" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="ZuK-xp-yAh">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="Uppercase"/>
+                                        <segment label="Capitalize" selected="YES" tag="1"/>
+                                        <segment label="Lowercase"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="changeCase:" target="XfG-lQ-9wD" id="gJt-cx-ast"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vRg-FN-ohD" secondAttribute="bottom" constant="20" id="HCq-xt-H3g"/>
+                            <constraint firstAttribute="trailing" secondItem="uph-Po-dBM" secondAttribute="trailing" constant="20" id="Pm4-ut-E0p"/>
+                            <constraint firstItem="vRg-FN-ohD" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="RNc-It-a59"/>
+                            <constraint firstItem="vRg-FN-ohD" firstAttribute="top" secondItem="uph-Po-dBM" secondAttribute="bottom" constant="8" id="VEO-p8-4AZ"/>
+                            <constraint firstItem="uph-Po-dBM" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="lso-91-mBg"/>
+                            <constraint firstItem="uph-Po-dBM" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="v9y-4y-Nh1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="0aI-Cx-TAc" id="6g4-vd-dsH"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,6 +6,8 @@
 
 @interface TXTEditorViewController ()
 
+@property (strong, nonatomic) IBOutlet NSTextView *textView;
+
 @property (strong, nonatomic) id<TXTTextServiceProtocol> textService;
 @property (strong, nonatomic) NSXPCConnection *connection;
 
@@ -18,7 +20,7 @@
     [super viewDidLoad];
     [self configureTextService];
     
-   // TODO: Try to call the service API
+    [self.textService ping];
 }
 
 - (void)configureTextService {
@@ -28,6 +30,13 @@
     
     self.textService = [self.connection remoteObjectProxyWithErrorHandler:^(NSError *error) {
         [NSOperationQueue.mainQueue addOperationWithBlock:^{ [self presentError:error]; }];
+    }];
+}
+
+- (IBAction)changeCase:(NSSegmentedControl *)sender {
+    NSString *text = self.textView.string;
+    [self.textService uppercaseString:text completionHandler:^(NSString *responseText) {
+        [NSOperationQueue.mainQueue addOperationWithBlock:^{ self.textView.string = responseText; }];
     }];
 }
 
