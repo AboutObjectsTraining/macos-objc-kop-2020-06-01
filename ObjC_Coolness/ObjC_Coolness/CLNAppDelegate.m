@@ -11,6 +11,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification {
     self.window.contentViewController = self.coolController;
+    self.window.excludedFromWindowsMenu = YES;
     [self.window makeKeyWindow];
 }
 

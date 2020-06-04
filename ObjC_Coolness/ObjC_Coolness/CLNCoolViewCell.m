@@ -21,6 +21,15 @@ IB_DESIGNABLE
 
 @implementation CLNCoolViewCell
 
+- (instancetype)initWithFrame:(NSRect)frameRect {
+    self = [super initWithFrame:frameRect];
+    if (self == nil) return nil;
+    
+    [self configureLayer];
+    
+    return self;
+}
+
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self == nil) return nil;
