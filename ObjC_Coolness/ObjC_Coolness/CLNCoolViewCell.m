@@ -70,9 +70,14 @@ IB_DESIGNABLE
 // MARK: - Drawing and resizing
 
 + (NSDictionary *)textAttributes {
-    // TODO: Cache in static variable
-    return @{ NSFontAttributeName : [NSFont systemFontOfSize:20],
-              NSForegroundColorAttributeName : NSColor.whiteColor, };
+    static NSDictionary *textAttributes;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        textAttributes = @{ NSFontAttributeName : [NSFont systemFontOfSize:20],
+                            NSForegroundColorAttributeName : NSColor.whiteColor, };
+    });
+    
+    return textAttributes;
 }
 
 - (void)sizeToFit {
