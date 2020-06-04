@@ -9,4 +9,6 @@
     completionHandler(text.uppercaseString);
 }
 
+- (void)ping { }
+
 @end

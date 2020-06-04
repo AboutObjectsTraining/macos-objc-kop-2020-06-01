@@ -3,7 +3,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface TXTEditorViewController : NSViewController
 
 
 @end

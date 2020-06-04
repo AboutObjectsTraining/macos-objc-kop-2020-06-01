@@ -3,8 +3,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define TXTTextServiceName @"com.aboutobjects.training.TextService"
+
 @protocol TXTTextServiceProtocol <NSObject>
 
 - (void)uppercaseString:(NSString *)text completionHandler:(void (^)(NSString *))completionHandler;
+
+- (void)ping;
 
 @end
