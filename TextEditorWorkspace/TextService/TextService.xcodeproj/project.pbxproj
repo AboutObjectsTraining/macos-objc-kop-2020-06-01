@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B41D703E24535EB6003F710F /* TextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D703D24535EB6003F710F /* TextService.swift */; };
-		B41D704024535EC2003F710F /* TextServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D703F24535EC2003F710F /* TextServiceDelegate.swift */; };
-		B41D70432453606B003F710F /* TextServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41D70422453606B003F710F /* TextServiceInterface.framework */; };
-		B41D70442453606B003F710F /* TextServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B41D70422453606B003F710F /* TextServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B41D704F245361F5003F710F /* not-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D704E245361F5003F710F /* not-main.swift */; };
-		B41D705924536C25003F710F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D705824536C25003F710F /* main.m */; };
+		B4A900392489752200FCD15E /* TXTTextService.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A900382489752200FCD15E /* TXTTextService.m */; };
+		B4A9003B2489752200FCD15E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A9003A2489752200FCD15E /* main.m */; };
+		B4A9007B24897B0700FCD15E /* TextServiceAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A9007A24897B0700FCD15E /* TextServiceAPI.framework */; };
+		B4A9007C24897B0700FCD15E /* TextServiceAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A9007A24897B0700FCD15E /* TextServiceAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4A9008824897BE800FCD15E /* TXTTextServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A9008724897BE800FCD15E /* TXTTextServiceDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B41D70452453606B003F710F /* Embed Frameworks */ = {
+		B4A9007D24897B0700FCD15E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B41D70442453606B003F710F /* TextServiceInterface.framework in Embed Frameworks */,
+				B4A9007C24897B0700FCD15E /* TextServiceAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -30,62 +29,62 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B41D702924535C63003F710F /* TextService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TextService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
-		B41D703224535C63003F710F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B41D703C24535EB5003F710F /* TextService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextService-Bridging-Header.h"; sourceTree = "<group>"; };
-		B41D703D24535EB6003F710F /* TextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextService.swift; sourceTree = "<group>"; };
-		B41D703F24535EC2003F710F /* TextServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextServiceDelegate.swift; sourceTree = "<group>"; };
-		B41D70422453606B003F710F /* TextServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TextServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B41D704E245361F5003F710F /* not-main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "not-main.swift"; sourceTree = "<group>"; };
-		B41D705824536C25003F710F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4A900332489752200FCD15E /* TextService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TextService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A900372489752200FCD15E /* TXTTextService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXTTextService.h; sourceTree = "<group>"; };
+		B4A900382489752200FCD15E /* TXTTextService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXTTextService.m; sourceTree = "<group>"; };
+		B4A9003A2489752200FCD15E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4A9003C2489752200FCD15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A9007A24897B0700FCD15E /* TextServiceAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TextServiceAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A9008624897BE800FCD15E /* TXTTextServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXTTextServiceDelegate.h; sourceTree = "<group>"; };
+		B4A9008724897BE800FCD15E /* TXTTextServiceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXTTextServiceDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B41D702624535C63003F710F /* Frameworks */ = {
+		B4A900302489752200FCD15E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D70432453606B003F710F /* TextServiceInterface.framework in Frameworks */,
+				B4A9007B24897B0700FCD15E /* TextServiceAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B41D702024535C63003F710F = {
+		B4A9002A2489752200FCD15E = {
 			isa = PBXGroup;
 			children = (
-				B41D702B24535C63003F710F /* TextService */,
-				B41D70412453606B003F710F /* Frameworks */,
-				B41D702A24535C63003F710F /* Products */,
+				B4A900352489752200FCD15E /* TextService */,
+				B4A900342489752200FCD15E /* Products */,
+				B4A9007924897B0700FCD15E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		B41D702A24535C63003F710F /* Products */ = {
+		B4A900342489752200FCD15E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B41D702924535C63003F710F /* TextService.xpc */,
+				B4A900332489752200FCD15E /* TextService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B41D702B24535C63003F710F /* TextService */ = {
+		B4A900352489752200FCD15E /* TextService */ = {
 			isa = PBXGroup;
 			children = (
-				B41D703D24535EB6003F710F /* TextService.swift */,
-				B41D703F24535EC2003F710F /* TextServiceDelegate.swift */,
-				B41D704E245361F5003F710F /* not-main.swift */,
-				B41D705824536C25003F710F /* main.m */,
-				B41D703224535C63003F710F /* Info.plist */,
-				B41D703C24535EB5003F710F /* TextService-Bridging-Header.h */,
+				B4A900372489752200FCD15E /* TXTTextService.h */,
+				B4A900382489752200FCD15E /* TXTTextService.m */,
+				B4A9008624897BE800FCD15E /* TXTTextServiceDelegate.h */,
+				B4A9008724897BE800FCD15E /* TXTTextServiceDelegate.m */,
+				B4A9003A2489752200FCD15E /* main.m */,
+				B4A9003C2489752200FCD15E /* Info.plist */,
 			);
 			path = TextService;
 			sourceTree = "<group>";
 		};
-		B41D70412453606B003F710F /* Frameworks */ = {
+		B4A9007924897B0700FCD15E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B41D70422453606B003F710F /* TextServiceInterface.framework */,
+				B4A9007A24897B0700FCD15E /* TextServiceAPI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,14 +92,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B41D702824535C63003F710F /* TextService */ = {
+		B4A900322489752200FCD15E /* TextService */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B41D703524535C63003F710F /* Build configuration list for PBXNativeTarget "TextService" */;
+			buildConfigurationList = B4A9003F2489752200FCD15E /* Build configuration list for PBXNativeTarget "TextService" */;
 			buildPhases = (
-				B41D702524535C63003F710F /* Sources */,
-				B41D702624535C63003F710F /* Frameworks */,
-				B41D702724535C63003F710F /* Resources */,
-				B41D70452453606B003F710F /* Embed Frameworks */,
+				B4A9002F2489752200FCD15E /* Sources */,
+				B4A900302489752200FCD15E /* Frameworks */,
+				B4A900312489752200FCD15E /* Resources */,
+				B4A9007D24897B0700FCD15E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -108,25 +107,24 @@
 			);
 			name = TextService;
 			productName = TextService;
-			productReference = B41D702924535C63003F710F /* TextService.xpc */;
+			productReference = B4A900332489752200FCD15E /* TextService.xpc */;
 			productType = "com.apple.product-type.xpc-service";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B41D702124535C63003F710F /* Project object */ = {
+		B4A9002B2489752200FCD15E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "About Objects";
 				TargetAttributes = {
-					B41D702824535C63003F710F = {
-						CreatedOnToolsVersion = 11.4.1;
-						LastSwiftMigration = 1140;
+					B4A900322489752200FCD15E = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = B41D702424535C63003F710F /* Build configuration list for PBXProject "TextService" */;
+			buildConfigurationList = B4A9002E2489752200FCD15E /* Build configuration list for PBXProject "TextService" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,18 +132,18 @@
 				en,
 				Base,
 			);
-			mainGroup = B41D702024535C63003F710F;
-			productRefGroup = B41D702A24535C63003F710F /* Products */;
+			mainGroup = B4A9002A2489752200FCD15E;
+			productRefGroup = B4A900342489752200FCD15E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B41D702824535C63003F710F /* TextService */,
+				B4A900322489752200FCD15E /* TextService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B41D702724535C63003F710F /* Resources */ = {
+		B4A900312489752200FCD15E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,21 +153,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B41D702524535C63003F710F /* Sources */ = {
+		B4A9002F2489752200FCD15E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D704024535EC2003F710F /* TextServiceDelegate.swift in Sources */,
-				B41D704F245361F5003F710F /* not-main.swift in Sources */,
-				B41D705924536C25003F710F /* main.m in Sources */,
-				B41D703E24535EB6003F710F /* TextService.swift in Sources */,
+				B4A9003B2489752200FCD15E /* main.m in Sources */,
+				B4A9008824897BE800FCD15E /* TXTTextServiceDelegate.m in Sources */,
+				B4A900392489752200FCD15E /* TXTTextService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B41D703324535C63003F710F /* Debug */ = {
+		B4A9003D2489752200FCD15E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		B41D703424535C63003F710F /* Release */ = {
+		B4A9003E2489752200FCD15E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,73 +275,52 @@
 			};
 			name = Release;
 		};
-		B41D703624535C63003F710F /* Debug */ = {
+		B4A900402489752200FCD15E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TextService/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TextService/TextService-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		B41D703724535C63003F710F /* Release */ = {
+		B4A900412489752200FCD15E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TextService/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TextService/TextService-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B41D702424535C63003F710F /* Build configuration list for PBXProject "TextService" */ = {
+		B4A9002E2489752200FCD15E /* Build configuration list for PBXProject "TextService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B41D703324535C63003F710F /* Debug */,
-				B41D703424535C63003F710F /* Release */,
+				B4A9003D2489752200FCD15E /* Debug */,
+				B4A9003E2489752200FCD15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B41D703524535C63003F710F /* Build configuration list for PBXNativeTarget "TextService" */ = {
+		B4A9003F2489752200FCD15E /* Build configuration list for PBXNativeTarget "TextService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B41D703624535C63003F710F /* Debug */,
-				B41D703724535C63003F710F /* Release */,
+				B4A900402489752200FCD15E /* Debug */,
+				B4A900412489752200FCD15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B41D702124535C63003F710F /* Project object */;
+	rootObject = B4A9002B2489752200FCD15E /* Project object */;
 }

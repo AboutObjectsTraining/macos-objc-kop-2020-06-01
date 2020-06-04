@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TextServiceAPI/TextServiceAPI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TextService/TextService.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TextEditorApp/TextEditorApp.xcodeproj">
+   </FileRef>
+</Workspace>

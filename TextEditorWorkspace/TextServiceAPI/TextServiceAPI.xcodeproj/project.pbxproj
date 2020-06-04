@@ -7,126 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B41D703E24535EB6003F710F /* TextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D703D24535EB6003F710F /* TextService.swift */; };
-		B41D704024535EC2003F710F /* TextServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D703F24535EC2003F710F /* TextServiceDelegate.swift */; };
-		B41D70432453606B003F710F /* TextServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41D70422453606B003F710F /* TextServiceInterface.framework */; };
-		B41D70442453606B003F710F /* TextServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B41D70422453606B003F710F /* TextServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B41D704F245361F5003F710F /* not-main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D704E245361F5003F710F /* not-main.swift */; };
-		B41D705924536C25003F710F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D705824536C25003F710F /* main.m */; };
+		B4A900712489779C00FCD15E /* TextServiceAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A9006F2489779C00FCD15E /* TextServiceAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4A900782489796300FCD15E /* TXTTextServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A900772489796300FCD15E /* TXTTextServiceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B41D70452453606B003F710F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B41D70442453606B003F710F /* TextServiceInterface.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		B41D702924535C63003F710F /* TextService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TextService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
-		B41D703224535C63003F710F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B41D703C24535EB5003F710F /* TextService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextService-Bridging-Header.h"; sourceTree = "<group>"; };
-		B41D703D24535EB6003F710F /* TextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextService.swift; sourceTree = "<group>"; };
-		B41D703F24535EC2003F710F /* TextServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextServiceDelegate.swift; sourceTree = "<group>"; };
-		B41D70422453606B003F710F /* TextServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TextServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B41D704E245361F5003F710F /* not-main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "not-main.swift"; sourceTree = "<group>"; };
-		B41D705824536C25003F710F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4A9006C2489779C00FCD15E /* TextServiceAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextServiceAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A9006F2489779C00FCD15E /* TextServiceAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextServiceAPI.h; sourceTree = "<group>"; };
+		B4A900702489779C00FCD15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A900772489796300FCD15E /* TXTTextServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXTTextServiceProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B41D702624535C63003F710F /* Frameworks */ = {
+		B4A900692489779C00FCD15E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D70432453606B003F710F /* TextServiceInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B41D702024535C63003F710F = {
+		B4A900622489779C00FCD15E = {
 			isa = PBXGroup;
 			children = (
-				B41D702B24535C63003F710F /* TextService */,
-				B41D70412453606B003F710F /* Frameworks */,
-				B41D702A24535C63003F710F /* Products */,
+				B4A9006E2489779C00FCD15E /* TextServiceAPI */,
+				B4A9006D2489779C00FCD15E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B41D702A24535C63003F710F /* Products */ = {
+		B4A9006D2489779C00FCD15E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B41D702924535C63003F710F /* TextService.xpc */,
+				B4A9006C2489779C00FCD15E /* TextServiceAPI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B41D702B24535C63003F710F /* TextService */ = {
+		B4A9006E2489779C00FCD15E /* TextServiceAPI */ = {
 			isa = PBXGroup;
 			children = (
-				B41D703D24535EB6003F710F /* TextService.swift */,
-				B41D703F24535EC2003F710F /* TextServiceDelegate.swift */,
-				B41D704E245361F5003F710F /* not-main.swift */,
-				B41D705824536C25003F710F /* main.m */,
-				B41D703224535C63003F710F /* Info.plist */,
-				B41D703C24535EB5003F710F /* TextService-Bridging-Header.h */,
+				B4A9006F2489779C00FCD15E /* TextServiceAPI.h */,
+				B4A900772489796300FCD15E /* TXTTextServiceProtocol.h */,
+				B4A900702489779C00FCD15E /* Info.plist */,
 			);
-			path = TextService;
-			sourceTree = "<group>";
-		};
-		B41D70412453606B003F710F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B41D70422453606B003F710F /* TextServiceInterface.framework */,
-			);
-			name = Frameworks;
+			path = TextServiceAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B4A900672489779C00FCD15E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A900782489796300FCD15E /* TXTTextServiceProtocol.h in Headers */,
+				B4A900712489779C00FCD15E /* TextServiceAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		B41D702824535C63003F710F /* TextService */ = {
+		B4A9006B2489779C00FCD15E /* TextServiceAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B41D703524535C63003F710F /* Build configuration list for PBXNativeTarget "TextService" */;
+			buildConfigurationList = B4A900742489779C00FCD15E /* Build configuration list for PBXNativeTarget "TextServiceAPI" */;
 			buildPhases = (
-				B41D702524535C63003F710F /* Sources */,
-				B41D702624535C63003F710F /* Frameworks */,
-				B41D702724535C63003F710F /* Resources */,
-				B41D70452453606B003F710F /* Embed Frameworks */,
+				B4A900672489779C00FCD15E /* Headers */,
+				B4A900682489779C00FCD15E /* Sources */,
+				B4A900692489779C00FCD15E /* Frameworks */,
+				B4A9006A2489779C00FCD15E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TextService;
-			productName = TextService;
-			productReference = B41D702924535C63003F710F /* TextService.xpc */;
-			productType = "com.apple.product-type.xpc-service";
+			name = TextServiceAPI;
+			productName = TextServiceAPI;
+			productReference = B4A9006C2489779C00FCD15E /* TextServiceAPI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B41D702124535C63003F710F /* Project object */ = {
+		B4A900632489779C00FCD15E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "About Objects";
 				TargetAttributes = {
-					B41D702824535C63003F710F = {
-						CreatedOnToolsVersion = 11.4.1;
-						LastSwiftMigration = 1140;
+					B4A9006B2489779C00FCD15E = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = B41D702424535C63003F710F /* Build configuration list for PBXProject "TextService" */;
+			buildConfigurationList = B4A900662489779C00FCD15E /* Build configuration list for PBXProject "TextServiceAPI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,18 +110,18 @@
 				en,
 				Base,
 			);
-			mainGroup = B41D702024535C63003F710F;
-			productRefGroup = B41D702A24535C63003F710F /* Products */;
+			mainGroup = B4A900622489779C00FCD15E;
+			productRefGroup = B4A9006D2489779C00FCD15E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B41D702824535C63003F710F /* TextService */,
+				B4A9006B2489779C00FCD15E /* TextServiceAPI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B41D702724535C63003F710F /* Resources */ = {
+		B4A9006A2489779C00FCD15E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,21 +131,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B41D702524535C63003F710F /* Sources */ = {
+		B4A900682489779C00FCD15E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41D704024535EC2003F710F /* TextServiceDelegate.swift in Sources */,
-				B41D704F245361F5003F710F /* not-main.swift in Sources */,
-				B41D705924536C25003F710F /* main.m in Sources */,
-				B41D703E24535EB6003F710F /* TextService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B41D703324535C63003F710F /* Debug */ = {
+		B4A900722489779C00FCD15E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -202,6 +174,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -224,10 +197,12 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		B41D703424535C63003F710F /* Release */ = {
+		B4A900732489779C00FCD15E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,6 +235,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -275,76 +251,77 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B41D703624535C63003F710F /* Debug */ = {
+		B4A900752489779C00FCD15E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TextService/Info.plist;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TextServiceAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextService;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextServiceAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TextService/TextService-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		B41D703724535C63003F710F /* Release */ = {
+		B4A900762489779C00FCD15E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = TextService/Info.plist;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TextServiceAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextService;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.TextServiceAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "TextService/TextService-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B41D702424535C63003F710F /* Build configuration list for PBXProject "TextService" */ = {
+		B4A900662489779C00FCD15E /* Build configuration list for PBXProject "TextServiceAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B41D703324535C63003F710F /* Debug */,
-				B41D703424535C63003F710F /* Release */,
+				B4A900722489779C00FCD15E /* Debug */,
+				B4A900732489779C00FCD15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B41D703524535C63003F710F /* Build configuration list for PBXNativeTarget "TextService" */ = {
+		B4A900742489779C00FCD15E /* Build configuration list for PBXNativeTarget "TextServiceAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B41D703624535C63003F710F /* Debug */,
-				B41D703724535C63003F710F /* Release */,
+				B4A900752489779C00FCD15E /* Debug */,
+				B4A900762489779C00FCD15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B41D702124535C63003F710F /* Project object */;
+	rootObject = B4A900632489779C00FCD15E /* Project object */;
 }

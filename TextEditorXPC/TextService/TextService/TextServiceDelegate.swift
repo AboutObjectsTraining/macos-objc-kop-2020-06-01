@@ -6,8 +6,7 @@ import TextServiceInterface
 
 class TextServiceDelegate: NSObject, NSXPCListenerDelegate
 {
-    func listener(_ listener: NSXPCListener,
-                  shouldAcceptNewConnection newConnection: NSXPCConnection) -> Bool
+    func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newConnection: NSXPCConnection) -> Bool
     {
         // Expose the service API
         newConnection.exportedInterface = NSXPCInterface(with: TextServiceProtocol.self)
