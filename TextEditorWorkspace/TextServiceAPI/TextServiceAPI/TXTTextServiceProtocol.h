@@ -8,6 +8,8 @@
 @protocol TXTTextServiceProtocol <NSObject>
 
 - (void)uppercaseString:(NSString *)text completionHandler:(void (^)(NSString *))completionHandler;
+- (void)lowercaseString:(NSString *)text completionHandler:(void (^)(NSString *))completionHandler;
+- (void)capitalizeString:(NSString *)text completionHandler:(void (^)(NSString *))completionHandler;
 
 - (void)ping;
 

@@ -16,10 +16,13 @@
 
 @implementation TXTEditorViewController
 
+- (void)dealloc {
+    [self.connection invalidate];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configureTextService];
-    
+    [self configureTextService];    
     [self.textService ping];
 }
 
@@ -38,6 +41,31 @@
     [self.textService uppercaseString:text completionHandler:^(NSString *responseText) {
         [NSOperationQueue.mainQueue addOperationWithBlock:^{ self.textView.string = responseText; }];
     }];
+    
+    switch (sender.selectedSegment) {
+        case 0: {
+            NSLog(@"Segment 1");
+            [self.textService uppercaseString:text completionHandler:^(NSString *responseText) {
+                [NSOperationQueue.mainQueue addOperationWithBlock:^{ self.textView.string = responseText; }];
+            }];
+            break;
+        }
+        case 1:{
+            NSLog(@"Segment 2");
+            [self.textService capitalizeString:text completionHandler:^(NSString *responseText) {
+                [NSOperationQueue.mainQueue addOperationWithBlock:^{ self.textView.string = responseText; }];
+            }];
+            break;
+        }
+        case 2: {
+            NSLog(@"Segment 3");
+            [self.textService lowercaseString:text completionHandler:^(NSString *responseText) {
+                [NSOperationQueue.mainQueue addOperationWithBlock:^{ self.textView.string = responseText; }];
+            }];
+            break;
+        }
+        default: NSLog(@"Whoops, shouldn't have gotten here.");
+    }
 }
 
 @end

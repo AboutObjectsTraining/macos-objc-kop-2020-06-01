@@ -9,6 +9,14 @@
     completionHandler(text.uppercaseString);
 }
 
+- (void)capitalizeString:(NSString *)text completionHandler:(void (^)(NSString *))completionHandler {
+    completionHandler(text.capitalizedString);
+}
+
+- (void)lowercaseString:(NSString *)text completionHandler:(void (^)(NSString *))completionHandler {
+    completionHandler(text.lowercaseString);
+}
+
 - (void)ping { }
 
 @end

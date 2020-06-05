@@ -715,7 +715,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="440" height="201"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" usesInspectorBar="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="0aI-Cx-TAc">
+                                        <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" usesInspectorBar="YES" findStyle="bar" incrementalSearchingEnabled="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="0aI-Cx-TAc">
                                             <rect key="frame" x="0.0" y="0.0" width="440" height="201"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -741,7 +741,7 @@
                                     <font key="font" metaFont="system"/>
                                     <segments>
                                         <segment label="Uppercase"/>
-                                        <segment label="Capitalize" selected="YES" tag="1"/>
+                                        <segment label="Capitalize" tag="1"/>
                                         <segment label="Lowercase"/>
                                     </segments>
                                 </segmentedCell>
